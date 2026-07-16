@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tech Solutions | Professional Website</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+/* Navbar */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:75px;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#0d6efd;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#0d6efd;
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+background:linear-gradient(135deg,#0d6efd,#4b8dff);
+color:white;
+}
+
+.hero-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:white;
+color:#0d6efd;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:450px;
+}
+
+/* Section */
+
+section{
+padding:100px 0;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+/* Features */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:35px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:45px;
+color:#0d6efd;
+margin-bottom:20px;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+/* About */
+
+.about{
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.about img{
+width:100%;
+max-width:450px;
+border-radius:15px;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+margin-bottom:20px;
+font-size:38px;
+}
+
+.about-text p{
+line-height:1.8;
+}
+
+/* Contact */
+
+.contact{
+background:white;
+padding:50px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+form{
+display:grid;
+gap:20px;
+}
+
+input,textarea{
+padding:15px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+textarea{
+resize:none;
+height:150px;
+}
+
+button{
+padding:15px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:18px;
+}
+
+button:hover{
+background:#084298;
+}
+
+/* Footer */
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+TechSolutions
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#features">Services</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-text">
+
+<h1>Build Amazing Digital Experiences</h1>
+
+<p>
+We design and develop modern websites,
+applications, and cloud solutions that help
+businesses grow faster.
+</p>
+
+<a href="#contact" class="btn">
+Get Started
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+alt="Office">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Features -->
+
+<section id="features">
+
+<div class="container">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-code"></i>
+
+<h3>Web Development</h3>
+
+<p>
+Modern responsive websites built using the latest technologies.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-mobile-screen"></i>
+
+<h3>Mobile Apps</h3>
+
+<p>
+Cross-platform applications with excellent performance.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-cloud"></i>
+
+<h3>Cloud Solutions</h3>
+
+<p>
+Deploy scalable applications using cloud infrastructure.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-shield-alt"></i>
+
+<h3>Cyber Security</h3>
+
+<p>
+Secure applications with modern security practices.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<div class="container about">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800">
+
+<div class="about-text">
+
+<h2>About Our Company</h2>
+
+<p>
+
+We are a passionate software development company
+providing innovative digital solutions for startups,
+businesses, and enterprises. Our mission is to deliver
+high-quality products with outstanding user experiences.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button>
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 TechSolutions. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</body>
+</html>
